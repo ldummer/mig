@@ -133,5 +133,6 @@ func (m *MigrationRunner) executeSQL(ctx context.Context, query string) error {
 	if _, err := m.pgxConn.Exec(ctx, query); err != nil {
 		return fmt.Errorf("failed to execute query: %w", err)
 	}
+	
 	return nil
 }
