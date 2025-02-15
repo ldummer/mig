@@ -1,4 +1,4 @@
-package mig
+package migpgx
 
 import (
 	"context"
